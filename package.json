@@ -1,0 +1,19 @@
+{
+  "name": "pinterest-clon",
+  "version": "1.0.0",
+  "description": "Pinterest Clon with Vanilla JavaScript",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gasparnd/pinterest-clon.git"
+  },
+  "author": "Gaspar Dolcemascolo <gaspardolcemascolo@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gasparnd/pinterest-clon/issues"
+  },
+  "homepage": "https://github.com/gasparnd/pinterest-clon#readme"
+}
