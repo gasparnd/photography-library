@@ -27,6 +27,17 @@ module.exports = {
 				test: /\.js$/,
 				use:'babel-loader',
 				exclude: /node_modules/,
+			},
+			{
+				test: /\.eot|svg|ttf|woff|png|jpg|webp$/,
+				use: {
+					loader: 'url-loader',
+					options: {
+						limit: 5000,
+						outputPath: 'asset',
+						name: '[name].[ext]'
+					}
+				},
 			}
 		]
 	},
