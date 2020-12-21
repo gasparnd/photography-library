@@ -196,3 +196,34 @@ body {
   width: 24px;
   border-radius: 50%;
 }
+
+/***************************************
+
+            HOME
+
+/**************************************/
+
+.content {
+  padding: .5rem 1rem;
+}
+
+.appContent-wraper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px);
+  /*grid-auto-rows: minmax(min-content, max-content);*/
+  grid-gap: 1.5rem 1rem;
+  justify-content: center;
+}
+
+.pin {
+  border: 1px solid red;
+  border-radius: 25px;
+  overflow: hidden;
+  vertical-align: top;
+}
+
+.pin img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
