@@ -1,9 +1,6 @@
 const Header = () => {
 	const view = `
 		<div class="header-wraper">
-			<figure class="logo">
-				<img src="../../media/pinterest-logo.png" alt="Pinterest Logo" width="200">
-			</figure>
 			<nav class="menu">
 				<div class="menu-item">
 					<p>Home</p>
