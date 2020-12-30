@@ -210,7 +210,7 @@ body {
 .appContent-wraper {
   display: grid;
   grid-template-columns: repeat(auto-fill, 250px);
-  /*grid-auto-rows: minmax(min-content, max-content);*/
+  grid-auto-rows: minmax(min-content, max-content);
   grid-gap: 1.5rem 1rem;
   justify-content: center;
 }
@@ -220,10 +220,21 @@ body {
   border-radius: 25px;
   overflow: hidden;
   vertical-align: top;
+  height: max-content; 
 }
 
 .pin img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  vertical-align: top;
+}
+
+.pin.lvl1 {
+  grid-row-end: span 1;
+}
+
+.pin.lvl2 {
+  grid-row-end: span 2;
+}
+
+.pin.lvl3 {
+  grid-row-end: span 3;
 }

@@ -1,12 +1,16 @@
-const API = 'https://source.unsplash.com/random/'
-
-const getPhoto = async () => {
-	for (let i = 0 ; i < 10; i++) {
-		const sizies = ['250x250', '250x500', '250x750']
-		const randomSize = Math.floor(Math.random() * 3)
-		const size = sizies[randomSize]
-		const response = await fetch(`https://source.unsplash.com/random/${size}`)
-		return response
+const CLIENT_ID = 'OFUMjvzxwguutNlHSxBHkxyQLowhfNAkPLMnG_0i53g'
+const pageNum = 1
+const API = `https://api.unsplash.com/photos?client_id=OFUMjvzxwguutNlHSxBHkxyQLowhfNAkPLMnG_0i53g&page=${pageNum}` //https://source.unsplash.com/random/
+const APISEARCH = `https://api.unsplash.com/search/photos?client_id=OFUMjvzxwguutNlHSxBHkxyQLowhfNAkPLMnG_0i53g&page=1&query=all`
+//LIST https://api.unsplash.com/photos?client_id=OFUMjvzxwguutNlHSxBHkxyQLowhfNAkPLMnG_0i53g&page=1
+const getPhoto = async (search) => {
+	const urlApi = search ? `${APISEARCH}${search}` : API
+	try {
+		const response = await fetch(APISEARCH)
+		const data = await response.json()
+		return data
+	} catch (error) {
+		return console.log(new Error(`Fetch Error: ${error}`))
 	}
 }
 

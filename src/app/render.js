@@ -9,8 +9,22 @@ const render = async () => {
 	const footer = null || document.querySelector('.footer')
 
 	header.innerHTML = await Header()
-	const photo = await getPhoto()
 	content.innerHTML = await Home()
+	
+	const photos = await getPhoto()
+	console.log(photos)
+	let pines
+
+	photos.results.forEach( photo => { 
+		console.log(photo)
+		pines = `
+			<img src="${photo.urls.regular}" width="400" height="250" alt="${photo.alt_description}">
+			<p>${photo.user.username}</p>
+		`
+		$('.appContent-wraper').append(pines)
+	})
+	
+
 }
 
 export default render
