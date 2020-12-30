@@ -10,7 +10,7 @@ const render = async () => {
 
 	header.innerHTML = await Header()
 	content.innerHTML = await Home()
-	
+
 	const photos = await getPhoto()
 	console.log(photos)
 	let pines
@@ -18,8 +18,18 @@ const render = async () => {
 	photos.results.forEach( photo => { 
 		console.log(photo)
 		pines = `
-			<img src="${photo.urls.regular}" width="400" height="250" alt="${photo.alt_description}">
-			<p>${photo.user.username}</p>
+			<div class="pin">
+				<img src="${photo.urls.regular}" width="400" height="300" alt="${photo.alt_description}">
+				<div class="pin-options">
+					<div class="download-pin">
+						<a href="${photo.links.download}">Download</a>
+					</div>
+					<div class="pin-user">
+						<p>${photo.user.username}</p>
+						<img src="${photo.user.profile_image.small}" width="25" height="25" alt="${photo.user.username}'s profile image">
+					</div>
+				</div>	
+			</div>
 		`
 		$('.appContent-wraper').append(pines)
 	})
