@@ -1,9 +1,12 @@
 const Header = () => {
 	const view = `
 		<div class="header-wraper">
+			<div class="home-item">
+				<p>Home</p>
+			</div>
 			<nav class="menu">
-				<div class="menu-item">
-					<p>Home</p>
+				<div class="header-ico more-options more-options-menu">
+					<i class="icon-chevron-down"></i>
 				</div>
 				<div class="menu-item">
 					<p>ToDay</p>
