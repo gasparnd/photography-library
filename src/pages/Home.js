@@ -1,6 +1,5 @@
-import getPhoto from '../utils/getPhoto'
 
-const Home = async () => {
+const Home = () => {
 	const view = `
 		<section class="appContent-wraper">
 		</section>

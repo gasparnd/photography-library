@@ -1,10 +1,7 @@
-
-
-const PhotosLayout = (photos, ) => {
+const PhotosLayout = (photos) => {
 	photos.results.forEach( photo => { 
-		console.log(photo)
-		const pines = `
-			<div class="pin">
+		let pines = `
+			<article class="pin">
 				<img src="${photo.urls.regular}" width="400" height="300" alt="${photo.alt_description}">
 				<div class="pin-options">
 					<div class="download-pin">
@@ -15,9 +12,9 @@ const PhotosLayout = (photos, ) => {
 						<img src="${photo.user.profile_image.small}" width="25" height="25" alt="${photo.user.username}'s profile image">
 					</div>
 				</div>	
-			</div>
+			</article>
 		`
-		$('.appContent-wraper').append(pines)
+		$('.pines-container').append(pines)
 	})
 }
 
