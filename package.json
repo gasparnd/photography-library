@@ -1,7 +1,7 @@
 {
   "name": "pinterest-clon",
   "version": "1.0.0",
-  "description": "Pinterest Clon with Vanilla JavaScript",
+  "description": "Photography library with Vanilla JavaScript",
   "main": "src/index.js",
   "scripts": {
     "start": "webpack-dev-server",
@@ -14,10 +14,6 @@
   },
   "author": "Gaspar Dolcemascolo <gaspardolcemascolo@gmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/gasparnd/pinterest-clon/issues"
-  },
-  "homepage": "https://github.com/gasparnd/pinterest-clon#readme",
   "devDependencies": {
     "@babel/core": "7.12.10",
     "@babel/plugin-transform-runtime": "7.12.10",
