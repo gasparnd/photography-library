@@ -8,7 +8,7 @@ const PhotosLayout = (photos, ) => {
 				<img src="${photo.urls.regular}" width="400" height="300" alt="${photo.alt_description}">
 				<div class="pin-options">
 					<div class="download-pin">
-						<a href="${photo.links.download}">Download</a>
+						<a target="_blank" href="${photo.links.download}">Download</a>
 					</div>
 					<div class="pin-user">
 						<p>${photo.user.username}</p>

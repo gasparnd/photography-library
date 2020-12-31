@@ -10,7 +10,7 @@ module.exports = {
 		filename: 'js/[name].js',
 	},
 	devServer: {
-		open: true,
+		open: false,
 	},
 	module: {
 		rules: [

@@ -12,12 +12,13 @@ const Header = () => {
 					<p>Following</p>
 				</div>
 			</nav>
-			<form class="search">
+			<div class="search">
 				<div class="search-ico">
 					<i class="icon-search"></i>
 				</div>
 				<input class="search-input" type="text" placeholder="search"></input>
-			</form>
+				<button id="search-btn">Search</button>
+			</div>
 			<div class="header-right">
 				<div class="header-ico">
 					<i class="icon-bell"></i>

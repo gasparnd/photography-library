@@ -12,12 +12,12 @@ const render = async () => {
 	header.innerHTML = await Header()
 	content.innerHTML = await Home()
 
-	const searchInput = document.querySelector('.search-ico')
+	const searchInput = document.querySelector('#search-btn')
 	searchInput.addEventListener('click', async () => {
 		const searchValue = document.querySelector('.search-input').value
 		const photos = await getPhoto(searchValue)
 		PhotosLayout(photos)
-	})
+	})	
 
 }
 
