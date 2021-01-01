@@ -1,9 +1,9 @@
 const Header = () => {
 	const view = `
 		<div class="header-wraper">
-			<div class="home-item">
+			<a href="https://photography-library.gasparnd.vercel.app/" class="home-item">
 				<p>Home</p>
-			</div>
+			</a>
 			<nav class="menu">
 				<div class="header-ico more-options more-options-menu">
 					<i class="icon-chevron-down"></i>
