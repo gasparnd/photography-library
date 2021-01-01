@@ -1,2 +1,2 @@
-# pinterest-clon
-Pinterest Clon with Vanilla JavaScript
+# Photography Library
+Photography library with Vanilla JavaScript
