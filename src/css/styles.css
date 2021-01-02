@@ -225,7 +225,7 @@ body {
 /**************************************/
 
 .content {
-  padding: .5rem 1rem;
+  padding: .5rem 0;
 }
 
 .pines-container {
@@ -298,21 +298,15 @@ body {
   display: flex;
 }
 
-@media screen and (max-width: 850px) {
-  main {
-    padding: 0;
-  }
+@media screen and (max-width: 816px) {
 
+  .content {
+    padding: .5rem 1rem;
+  }
 
   .pines-container {
     display: flex;
     flex-direction: column;
   }
-
-
-  .pin img{
-    
-  }
-
-
+  
 }
