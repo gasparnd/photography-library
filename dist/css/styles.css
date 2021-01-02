@@ -86,6 +86,7 @@ body {
   grid-template-rows: auto;
   grid-template-areas: 'home menu share profile';
   align-items: center;
+  width: 100%;
 }
 
 .home-item {
@@ -96,9 +97,11 @@ body {
   cursor: pointer;
   background: #000;
   color: white;
+  text-decoration: none;
+  margin-right: .3rem;
 }
 
-.menu {
+/*.menu {
   grid-area: menu;
   display: flex;
 }
@@ -116,7 +119,7 @@ body {
 
 .more-options-menu {
   display: none;
-}
+}*/
 
 .search {
   grid-area: share;
@@ -139,7 +142,6 @@ body {
 
 .search-input {
   width: 100%;
-  
   border: none;
   padding: .8rem;
   font-weight: normal;
@@ -205,11 +207,6 @@ body {
     align-items: center;
   }
 
-  .more-options-menu {
-    grid-area: menu;
-    display: block;
-  }
-
   .menu-item {
     display: none;
   }
@@ -218,9 +215,6 @@ body {
     display: none;
   }
 
-  .more-options {
-    display: block;
-  }
 }
 
 /***************************************
@@ -230,7 +224,7 @@ body {
 /**************************************/
 
 .content {
-  padding: .5rem 1rem;
+  padding: .5rem 0;
 }
 
 .pines-container {
@@ -252,6 +246,7 @@ body {
 .pin img{
   vertical-align: top;
   object-fit: cover;
+  width: 100%;
 }
 
 .pin-options {
@@ -302,16 +297,15 @@ body {
   display: flex;
 }
 
-@media screen and (max-width: 850px) {
-  main {
-    padding: 0;
+@media screen and (max-width: 816px) {
+
+  .content {
+    padding: .5rem 1rem;
   }
 
   .pines-container {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
   }
-
-  .pin img{
-    width: 100%
-  }
+  
 }
