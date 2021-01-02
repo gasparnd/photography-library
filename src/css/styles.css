@@ -87,6 +87,7 @@ body {
   grid-template-rows: auto;
   grid-template-areas: 'home menu share profile';
   align-items: center;
+  width: 100%;
 }
 
 .home-item {
@@ -254,6 +255,7 @@ body {
 .pin img{
   vertical-align: top;
   object-fit: cover;
+  width: 100%;
 }
 
 .pin-options {
@@ -309,11 +311,16 @@ body {
     padding: 0;
   }
 
+
   .pines-container {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
   }
 
+
   .pin img{
-    width: 100%
+    
   }
+
+
 }

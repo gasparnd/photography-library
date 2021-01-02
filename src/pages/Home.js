@@ -1,4 +1,3 @@
-
 const Home = () => {
 	const view = `
 		<section class="appContent-wraper">

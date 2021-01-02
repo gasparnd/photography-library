@@ -19,7 +19,7 @@ const Header = () => {
 				<div class="search-ico">
 					<i class="icon-search"></i>
 				</div>
-				<input class="search-input" type="text" placeholder="search"></input>
+				<input class="search-input" type="text" placeholder="Try Cats"></input>
 				<button id="search-btn">Search</button>
 			</div>
 			<div class="header-right">
