@@ -99,9 +99,10 @@ body {
   background: #000;
   color: white;
   text-decoration: none;
+  margin-right: .3rem;
 }
 
-.menu {
+/*.menu {
   grid-area: menu;
   display: flex;
 }
@@ -119,7 +120,7 @@ body {
 
 .more-options-menu {
   display: none;
-}
+}*/
 
 .search {
   grid-area: share;
@@ -142,7 +143,6 @@ body {
 
 .search-input {
   width: 100%;
-  
   border: none;
   padding: .8rem;
   font-weight: normal;
@@ -208,11 +208,6 @@ body {
     align-items: center;
   }
 
-  .more-options-menu {
-    grid-area: menu;
-    display: block;
-  }
-
   .menu-item {
     display: none;
   }
@@ -221,9 +216,6 @@ body {
     display: none;
   }
 
-  .more-options {
-    display: block;
-  }
 }
 
 /***************************************
