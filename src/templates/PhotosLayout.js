@@ -1,5 +1,6 @@
 const PhotosLayout = (photos) => {
 	photos.results.forEach( photo => { 
+		console.log(photo)
 		let pines = `
 			<article class="pin">
 				<img src="${photo.urls.regular}" width="400" height="300" alt="${photo.alt_description}">

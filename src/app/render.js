@@ -26,7 +26,6 @@ const render = async () => {
 		contentWraper.innerHTML = '<div class="pines-container"></div>'
 		const photos = await getPhoto(searchValue)
 		PhotosLayout(photos)
-		searchValue.value = ''
 	})
 }
 
